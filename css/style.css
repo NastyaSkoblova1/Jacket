@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+.container {
+  margin: 0 5%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 5% 0 30px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.jackets {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.jacket-yellow {
+  -webkit-filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+  -moz-filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+  -ms-filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.jacket,
+.vs-text {
+  opacity: 0;
+}
+
+.jacket-blue-container,
+.jacket-yellow-container {
+  width: 50%;
+}
+
+.jacket-blue-container {
+  float: left;
+}
+
+.jacket-yellow-container {
+  float: right;
+}
+
+.vs-text {
+  position: absolute;
+  width: 3%;
+  margin-left: -1.5%;
+  top: 45%;
+  left: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+svg .hide,
+svg .size.reference .details.hide {
+  display: none;
+}
+
+svg .size {
+  fill: none;
+}
+
+svg .outline path {
+  stroke-width: 1.5;
+}
+
+svg .details path {
+  stroke-width: 1;
+}
+
+svg .size.reference .outline {
+  stroke: #ffba00;
+  fill: rgba(255, 251, 242, 1);
+  stroke-dasharray: 2.5;
+}
+
+svg .size.compare .outline {
+  stroke: #0098e6;
+  /*fill: rgba(0, 152, 230, .1);*/
+  fill: rgba(233, 246, 255, 1);
+  ;
+}
+
+svg .size.reference .details {
+  display: inline;
+  stroke: #ffba00;
+}
+
+svg .size.compare .details {
+  display: inline;
+  stroke: #0098e6;
+}
+
+svg .size.reference .arrows path {
+  fill: none;
+  stroke-width: 1;
+  stroke: #ffba00;
+}
+
+svg .size.compare .arrows path {
+  fill: none;
+  stroke-width: 1;
+  stroke: #0098e6;
+}
+
+svg .size.reference .arrows .head {
+  stroke: none;
+  fill: #ffba00;
+}
+
+svg .size.compare .arrows .head {
+  stroke: none;
+  fill: #0098e6;
+}
+
+svg .size.reference .labels .bg {
+  fill: #ffba00;
+  stroke: none;
+}
+
+svg .size.compare .labels .bg {
+  fill: #0098e6;
+  stroke: none;
+}
+
+svg .labels .text {
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial;
+  /*font-weight: 700;*/
+  /* Use font-weight: 700 if Proxima Nova is available */
+  font-size: 10px;
+  line-height: 18px;
+  text-anchor: middle;
+  fill: #fff;
+  stroke: none;
+}
